@@ -31,6 +31,6 @@ A handle is a reference to a resource such as a file, thread, memory or a pipe. 
 See the ![msdn](https://msdn.microsoft.com/en-us/library/windows/desktop/ms724457(v=vs.85).aspx) for more.
 
 ## Tips/Notes
-You must have administrative privilege to run Handle.
+You must have administrative privilege to run Handle.</br>
 You can edit the script to add the -c flag to handle command (![see handle usage](https://docs.microsoft.com/en-us/sysinternals/downloads/handle#usage)), which will forcibly close the handles so you don't have to close any programs. However this is **not recommended** as forcibly closing handles may result in instability / crashes. </br>
 This tool combined with the [takeown](https://gist.github.com/0XDE57/38957c935788926416ba20b6bec6fa43) command is very powerful.
