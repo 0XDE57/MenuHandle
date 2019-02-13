@@ -11,16 +11,17 @@ Well fuss no more! This script adds a command to the right-click context menu to
 
 ![](/docs/menu%20command.PNG)
 ![](/docs/handle.PNG)
-Oh look! VLC is playing a song that was in that folder, thus preventing us from deleting the folder.
+Oh look! VLC is playing a song that was in that folder, thus preventing us from deleting the folder. Now why didn't Windows tell us that instead of "another program"...
 
 ## How to use/install?    
 1. Download and extract Handle: https://docs.microsoft.com/en-us/sysinternals/downloads/handle    
-2. Download the script ![handle menu command.bat](handle%20menu%20command.bat)   
+2. Download the script: [handle menu command.bat](handle%20menu%20command.bat)   
 3. Edit the script in your favourite text editor    
 4. Set the variable **handlePath** to the path of the handle executable. </br>
    ``` eg: handlePath="E:\Documents\SysinternalsSuite\handle.exe" ```
 5. Run the script as admin    
 6. Enjoy. All your problems in life are solved.
+
 
 ## How it Works
 This script simply adds registry key to add a command to the right-click context menu. The command and passes the selected file/folder to handle. The real heavy lifting is done by handle.
@@ -32,5 +33,5 @@ See the [msdn](https://msdn.microsoft.com/en-us/library/windows/desktop/ms724457
 
 ## Tips/Notes
 You must have administrative privilege to run Handle.</br>
-You can edit the script to add the -c flag to handle command ([see handle usage](https://docs.microsoft.com/en-us/sysinternals/downloads/handle#usage)), which will forcibly close the handles so you don't have to close any programs. However this is **not recommended** as forcibly closing handles may result in instability / crashes. </br>
-This tool combined with the [takeown](https://gist.github.com/0XDE57/38957c935788926416ba20b6bec6fa43) command is very powerful.
+You can edit the script to add the -c flag to handle command ([see handle usage](https://docs.microsoft.com/en-us/sysinternals/downloads/handle#usage)), which will forcibly close the handles so you don't have to close any programs. However this is [**not recommended**](https://docs.microsoft.com/en-us/previous-versions/technet-magazine/dd547078(v=msdn.10)) as forcibly closing handles may result in instability / crashes.
+</br>This tool combined with the [takeown](https://gist.github.com/0XDE57/38957c935788926416ba20b6bec6fa43) command is very powerful.
